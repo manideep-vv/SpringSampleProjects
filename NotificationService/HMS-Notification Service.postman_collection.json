@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "bc40cd83-c101-420e-9fac-ffb81ab07efa",
+		"name": "HMS-Notification Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28834521"
+	},
+	"item": [
+		{
+			"name": "5.Notifications- get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/Notifications/getAllNotifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"Notifications",
+						"getAllNotifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.Notifications-create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"customer registration has been failed\",\r\n    \"type\": \"email\",\r\n    \"customerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/Notifications/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"Notifications",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
